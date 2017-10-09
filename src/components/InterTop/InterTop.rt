@@ -1,0 +1,9 @@
+<div class="inter_top-menu">
+    <ul class="inter_top-menu_list clearfix">
+        <rt-virtual rt-repeat="item in this.props.items">
+            <li rt-class="{active: this.getActiveSlug() == item.slug}">
+                <a href="#{item.slug}" onClick="()=>this.itemSelected(item)">{item.title}</a>
+            </li>
+        </virtual>
+    </ul>
+</div>

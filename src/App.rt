@@ -1,7 +1,9 @@
+<rt-import  name="default" as="InterTop" from="./components/InterTop/InterTop" />
 <div className="App">
   <header className="App-header">
     <img src="{this.getLogo()}" className="App-logo" alt="logo" />
     <h1 className="App-title">Welcome to React</h1>
   </header>
   <p className="App-intro">To get started, edit <code>src/App.js</code> and save to reload.</p>
+  <InterTop items={this.get_nav_items()} active_slug={this.get_nav_items()[0].slug} />
 </div>
